@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=League+Spartan:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Room homepage</title>
@@ -17,31 +19,52 @@
 <body>
 
   <div class="wrapper">
-    <div><img class="column"  id="image" src="./images/desktop-image-hero-1.jpg" alt=""></div>
-    <div class="column" id="herotext">  Discover innovative ways to decorate
-
+    <nav> <img src="./images/logo.svg" id="logo" alt="">
+      <a href="">Home</a>
+      <a href="">Shop</a>
+      <a href="">About</a>
+      <a href="">Contact</a>
+    </nav>
+    <div class="columnimage">
+      <img id="image" src="./images/desktop-image-hero-1.jpg" alt="">
+      <!-- <img id="image" src="./images/desktop-image-hero-2.jpg" alt="">
+      <img id="image" src="./images/desktop-image-hero-3.jpg" alt=""> -->
+    </div>
+    
+    <div class="column">
+      <div id="herotext">
+      <h1> Discover innovative ways to decorate </h1>
+      <p>
       We provide unmatched quality, comfort, and style for property owners across the country. 
       Our experts combine form and function in bringing your vision to life. Create a room in your 
-      own style with our collection and make your property a reflection of you and what you love.</div>
+      own style with our collection and make your property a reflection of you and what you love.</p>
+      <div id="shopnow"><a id="shopnow">SHOP NOW</a> <img src="./images/icon-arrow.svg" alt=""> </div>
+    </div>
+    <div class="boxes-container">
+    <div class="box"> <img src="./images/icon-angle-left.svg" id='arrow' alt=""></div>
+    <div class="box"> <img src="./images/icon-angle-right.svg" id='arrow' alt=""></div></div>
+  </div>
+
   </div>
   <div class="bottomwrapper">
     <div><img id="bottomimage" class="column2" src="./images/desktop-image-hero-2.jpg" alt=""></div>
-    <div class="column2" id="bottomtext"> About our furniture
-
-      Our multifunctional collection blends design and function to suit your individual taste.
-      Make each room unique, or pick a cohesive theme that best express your interests and what
-      inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-      or anything in between. Product specialists are available to help you create your dream space.</div>
-  
-    <div><img id="bottomimage" class="column2" src="./images/desktop-image-hero-3.jpg" alt=""></div>
+    <div class="column3"> 
+      <div id="bottomtext">
+        <h3> About our furniture</h3>
+        <p>
+          Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.
+        </p>
+      </div>
+    </div>
+    <div><img id="bottomimage" class="column4" src="./images/desktop-image-hero-3.jpg" alt=""></div>
   </div>
   </div>
 
 <!-- 
-  Home
-  Shop
-  About
-  Contact
+
 
   Discover innovative ways to decorate
 

@@ -1,34 +1,149 @@
 .wrapper {
     // display: flex;
     width: 100vw;
-    height: 60vh;
+    height: 65vh;
 }
 
 #image{
-    height: 60vh;
+    height: 65vh;
     object-fit: cover;
 }
 
 #bottomimage{
-    height: 40vh;
+    height: 35vh;
     object-fit: cover;
+}
+
+#herotext {
+    padding: 0 6vh;
+}
+
+#bottomtext {
+    padding: 0 5vh;
+}
+
+#logo{
+    margin-right: 3vh;
+}
+
+nav{
+    position: absolute;
+    top: 7vh;
+    left: 7vh;
+    align-items: center;
+    display: flex;
 }
 
 .column {
     float: left;
-    width: 50%;
+    width: 40%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.columnimage {
+    float: left;
+    width: 60%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    font-family: 'League Spartan';
 }
 
 .bottomwrapper {
     width: 100vw;
-    height: 40vh;
+    height: 35vh;
 }
 
 .column2 {
     float: left;
-    width: 33.33%;
+    width: 28%;
+    height: 34vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.column3 {
+    float: left;
+    width: 43%;
+    height: 38vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.column4 {
+    float: left;
+    width: 29%;
+    height: 34vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+h3{
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+}
+
+a{
+    text-decoration: none;
+    margin: 0 2vh;
+    text-transform: lowercase;
+    color: white;
+}
+
+#shopnow{
+    align-self: flex-start;
+    margin-top: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.75rem;
+    color: black;
+    margin: 0;
+    text-transform: none;
+
+}
+
+p {
+    color: hsl(0, 0%, 63%);
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.box {
+    margin: 0;
+    box-sizing: border-box;
+    height: 10vh;
+    width: 10vh;
+    background-color: black;
+    display: flex;
+}
+
+
+.boxes-container{
+    position: absolute;
+    bottom: 35vh;
+    display: flex;
+}
+
+
+#arrow{
+    margin: auto;
 }
