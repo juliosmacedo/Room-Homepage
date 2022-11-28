@@ -2,19 +2,56 @@
     // display: flex;
     width: 100vw;
     height: 65vh;
+    transition: all 0.3s ease;
 }
 
-#image{
+.wrapper img {
     height: 65vh;
     object-fit: cover;
+    transition: all 0.3s ease;
 }
+
 
 #bottomimage{
     height: 35vh;
     object-fit: cover;
 }
 
-#herotext {
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    right: relative;
+    margin-right: 40vw;
+    right: 0vh;
+}
+
+.main{
+    transition:opacity 0.5s ease;
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    right: relative;
+    margin: 0;
+}
+
+
+.hiddentext{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+}
+
+.maintext{
+    transition:opacity 0.5s ease;
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    right: relative;
+    margin: 0;
+}
+
+.herotext {
     padding: 0 6vh;
 }
 
@@ -24,6 +61,8 @@
 
 #logo{
     margin-right: 3vh;
+    height: 2vh;
+    transition: none;
 }
 
 nav{
@@ -32,6 +71,7 @@ nav{
     left: 7vh;
     align-items: center;
     display: flex;
+    z-index: 3;
 }
 
 .column {
@@ -76,7 +116,7 @@ body {
 .column3 {
     float: left;
     width: 43%;
-    height: 38vh;
+    height: 35vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -127,6 +167,9 @@ p {
     line-height: 1.5rem;
 }
 
+.article{
+    margin: 3vh 0;
+}
 .box {
     margin: 0;
     box-sizing: border-box;
@@ -144,6 +187,35 @@ p {
 }
 
 
-#arrow{
+#arrowright, #arrowleft{
     margin: auto;
+    height: 3vh;
 }
+
+#shopnowicon{
+    margin: auto;
+    height: 1.8vh;
+}
+
+
+
+
+.carousel {
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  
+  }
+  .carousel img {
+    width: 100%;
+    transition: all 0.3s ease;
+    border:8px solid white;
+  }
+  
+  .item {
+    position: absolute;
+    display: none;
+  }
+  
+  .main {
+    display: block;
+  }
