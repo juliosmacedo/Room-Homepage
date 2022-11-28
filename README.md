@@ -18,8 +18,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/juliosmacedo/Room-Homepage/](github repo)
-- Live Site URL: [https://juliosmacedo.github.io/Room-Homepage/](github pages)
+- Solution URL: [github repo](https://github.com/juliosmacedo/Room-Homepage/)
+- Live Site URL: [github pages](https://juliosmacedo.github.io/Room-Homepage/)
 
 ## My process
 
