@@ -1,5 +1,5 @@
-const prev = document.getElementById('arrowleft');
-const next = document.getElementById('arrowright');
+const prev = document.getElementById('leftbox');
+const next = document.getElementById('rightbox');
 const images = document.querySelector('.columnimage').children;
 const totalImages = images.length;
 const headlines = document.querySelector('.headlines').children;
@@ -39,22 +39,14 @@ function nextImage(direction) {
   articles[index].classList.add('maintext');
 }
 
-// function nextText(direction) {
-//     if(direction == 'next') {
-//       index++;
-//       if(index == totalHeadlines) {
-//         index = 0;
-//       }
-//     } else {
-//       if(index == 0) {
-//         index = totalHeadlines - 1;
-//       } else {
-//         index--;
-//       }
-//     }
-  
-//     for(let i = 0; i < headlines.length; i++) {
-//       headlines[i].classList.remove('maintext');
-//     }
-//     headlines[index].classList.add('maintext');
-//   }
+$(document).ready(function() {
+    if($(window).width() > 515) {
+        $("#img1").attr("src", "./images/desktop-image-hero-1.jpg");
+        $("#img2").attr("src", "./images/desktop-image-hero-2.jpg");
+        $("#img3").attr("src", "./images/desktop-image-hero-3.jpg");
+    } else {
+        $("#img1").attr("src", "./images/mobile-image-hero-1.jpg");
+        $("#img2").attr("src", "./images/mobile-image-hero-2.jpg");
+        $("#img3").attr("src", "./images/mobile-image-hero-3.jpg");
+    }
+}); 

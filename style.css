@@ -198,8 +198,6 @@ p {
 }
 
 
-
-
 .carousel {
     margin-top: 20px;
     transition: all 0.3s ease;
@@ -219,3 +217,94 @@ p {
   .main {
     display: block;
   }
+
+
+@media only screen and (max-width: 1125px) {
+    .herotext{
+        margin-bottom: 7vh;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .article{
+        margin: 1vh 0;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .herotext{
+        padding: 0 2vh;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    nav{
+        top: 3vh;
+    left: 2vh;
+    }
+
+    #bottomtext{
+        padding: 0 2vh;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+
+    nav a{
+        display: none;
+    }
+
+    nav{
+        left: 40%;
+        top: 4vh;
+    }
+
+    .columnimage{
+        width: 100vw;
+        height: 42vh;
+    }
+
+    .column{
+        width: 100%;
+        height: 49vh;
+    }
+
+    #bottomtext{
+        margin: 3vh;
+    }
+
+    .herotext{
+        padding: 0 4vh;
+        margin-bottom: 0;
+    }
+
+    .wrapper img{
+        height: 100%;
+    }
+
+    .boxes-container{
+        bottom: 58vh;
+        right: 0;
+    }
+
+    .box{
+        height: 7vh;
+        width: 7vh;
+    }
+
+    #arrowright, #arrowleft{
+        height: 2vh;
+    }
+
+    .bottomwrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .column2, .column3, .column4 {
+        width: 100%;
+    }
+}
